@@ -1,6 +1,7 @@
 body
 {
 
+    background: #d8dee9;
     background-size:"" cover;
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
@@ -68,6 +69,8 @@ body
     border-radius: 10px;
 
 }
+
+
 .x025
 {
     font-weight: bold;
@@ -149,7 +152,7 @@ button
 {
     border: 1px solid black;
     padding-top: 6px;
-    padding-bottom: 6px;
+    padding-bottom: 6   px;
     color: black;
     font-weight: bold;
     width: 150px;
@@ -168,3 +171,13 @@ button
     background: darkslateblue;
 }
 
+.bg-color-false
+{
+    background-color:#bf616a
+}
+
+
+.bg-color-true
+{
+    background-color:#a3be8c;
+}

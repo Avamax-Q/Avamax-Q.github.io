@@ -41,15 +41,17 @@ function check(selected_index,effective)
             {
 
                 streakEl.textContent="All Types Guessed Correctly"
-                setTimeout(allTypesComplete,2000)
+                setTimeout(allTypesComplete,2000,this)
                 randomise()
 
             }
+            return true
         }
         else
         {
             resultEl.textContent = "Wrong Guess"
             streakEl.textContent=0
+            return false
         }
     }
     else
@@ -65,15 +67,17 @@ function check(selected_index,effective)
             {
 
                 streakEl.textContent="All Types Guessed Correctly"
-                setTimeout(allTypesComplete,2000)
+                setTimeout(allTypesComplete,2000,this)
 
 
             }
+            return true
         }
         else
         {
             resultEl.textContent = "Wrong Guess"
             streakEl.textContent=0
+            return false
         }
 
         console.log((final_effec))
@@ -98,111 +102,256 @@ function reset()
     streakEl.textContent=0
     streakCountEl.textContent="Streak - "
 }
-function btn1(selected_effectiveness)
+function btn1(selected_effectiveness,el)
 {
     selection=type[0]
-    check(0,selected_effectiveness)
+   if( check(0,selected_effectiveness))
+   {
+        el.classList.add("bg-color-true")
+   }
+
+   else
+   {
+       el.classList.add("bg-color-false")
+   }
 }
 
-function btn2(selected_effectiveness)
+function btn2(selected_effectiveness,el)
 {
     selection=type[1]
-    check(1,selected_effectiveness)
+    if(check(1,selected_effectiveness))
+    {
+        el.classList.add("bg-color-true")
+    }
+
+    else
+    {
+        el.classList.add("bg-color-false")
+    }
 }
 
-function btn3(selected_effectiveness)
+function btn3(selected_effectiveness,el)
 {
     selection=type[2]
-    check(2,selected_effectiveness)
+    if(check(2,selected_effectiveness))
+    {
+        el.classList.add("bg-color-true")
+    }
+
+    else
+    {
+        el.classList.add("bg-color-false")
+    }
+
 }
 
-function btn4(selected_effectiveness)
+function btn4(selected_effectiveness,el)
 {
     selection=type[3]
-    check(3,selected_effectiveness)
+    if(check(3,selected_effectiveness))
+    {
+        el.classList.add("bg-color-true")
+    }
+
+    else
+    {
+        el.classList.add("bg-color-false")
+    }
 }
 
-function btn5(selected_effectiveness)
+function btn5(selected_effectiveness,el)
 {
     selection=type[4]
-    check(4,selected_effectiveness)
+    if(check(4,selected_effectiveness))
+    {
+        el.classList.add("bg-color-true")
+    }
+
+    else
+    {
+        el.classList.add("bg-color-false")
+    }
 }
 
-function btn6(selected_effectiveness)
+function btn6(selected_effectiveness,el)
 {
     selection=type[5]
-    check(5,selected_effectiveness)
+    if(check(5,selected_effectiveness))
+    {
+        el.classList.add("bg-color-true")
+    }
+
+    else
+    {
+        el.classList.add("bg-color-false")
+    }
 }
 
-function btn7(selected_effectiveness)
+function btn7(selected_effectiveness,el)
 {
     selection=type[6]
-    check(6,selected_effectiveness)
+    if(check(6,selected_effectiveness))
+    {
+        el.classList.add("bg-color-true")
+    }
+
+    else
+    {
+        el.classList.add("bg-color-false")
+    }
 }
 
-function btn8(selected_effectiveness)
+function btn8(selected_effectiveness,el)
 {
     selection=type[7]
-    check(7,selected_effectiveness)
+    if(check(7,selected_effectiveness))
+    {
+        el.classList.add("bg-color-true")
+    }
+
+    else
+    {
+        el.classList.add("bg-color-false")
+    }
 }
 
-function btn9(selected_effectiveness)
+function btn9(selected_effectiveness,el)
 {
     selection=type[8]
-    check(8,selected_effectiveness)
+    if(check(8,selected_effectiveness))
+    {
+        el.classList.add("bg-color-true")
+    }
+
+    else
+    {
+        el.classList.add("bg-color-false")
+    }
 }
 
-function btn10(selected_effectiveness)
+function btn10(selected_effectiveness,el)
 {
     selection=type[9]
-    check(9,selected_effectiveness)
+    if(check(9,selected_effectiveness))
+    {
+        el.classList.add("bg-color-true")
+    }
+
+    else
+    {
+        el.classList.add("bg-color-false")
+    }
 }
 
-function btn11(selected_effectiveness)
+function btn11(selected_effectiveness,el)
 {
     selection=type[10]
-    check(10,selected_effectiveness)
+    if(check(10,selected_effectiveness))
+    {
+        el.classList.add("bg-color-true")
+    }
+
+    else
+    {
+        el.classList.add("bg-color-false")
+    }
 }
 
-function btn12(selected_effectiveness)
+function btn12(selected_effectiveness,el)
 {
     selection=type[11]
-    check(11,selected_effectiveness)
+    if(check(11,selected_effectiveness))
+    {
+        el.classList.add("bg-color-true")
+    }
+
+    else
+    {
+        el.classList.add("bg-color-false")
+    }
 }
 
-function btn13(selected_effectiveness)
+function btn13(selected_effectiveness,el)
 {
     selection=type[12]
-    check(12,selected_effectiveness)
+    if(check(12,selected_effectiveness))
+    {
+        el.classList.add("bg-color-true")
+    }
+
+    else
+    {
+        el.classList.add("bg-color-false")
+    }
 }
 
-function btn14(selected_effectiveness)
+function btn14(selected_effectiveness,el)
 {
     selection=type[13]
-    check(13,selected_effectiveness)
+    if(check(13,selected_effectiveness))
+    {
+        el.classList.add("bg-color-true")
+    }
+
+    else
+    {
+        el.classList.add("bg-color-false")
+    }
 }
 
-function btn15(selected_effectiveness)
+function btn15(selected_effectiveness,el)
 {
     selection=type[14]
-    check(14,selected_effectiveness)
+    if(check(14,selected_effectiveness))
+    {
+        el.classList.add("bg-color-true")
+    }
+
+    else
+    {
+        el.classList.add("bg-color-false")
+    }
 }
 
 
-function btn16(selected_effectiveness)
+function btn16(selected_effectiveness,el)
 {
     selection=type[15]
-    check(15,selected_effectiveness)
+    if(check(15,selected_effectiveness))
+    {
+        el.classList.add("bg-color-true")
+    }
+
+    else
+    {
+        el.classList.add("bg-color-false")
+    }
 }
 
-function btn17(selected_effectiveness)
+function btn17(selected_effectiveness,el)
 {
     selection=type[16]
-    check(16,selected_effectiveness)
+    if(check(16,selected_effectiveness))
+    {
+        el.classList.add("bg-color-true")
+    }
+
+    else
+    {
+        el.classList.add("bg-color-false")
+    }
 }
 
-function btn18(selected_effectiveness)
+function btn18(selected_effectiveness,el)
 {
     selection=type[17]
-    check(17,selected_effectiveness)
+    if(check(17,selected_effectiveness))
+    {
+        el.classList.add("bg-color-true")
+    }
+
+    else
+    {
+        el.classList.add("bg-color-false")
+    }
 }
