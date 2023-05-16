@@ -18,6 +18,7 @@ function randomise()
 let selection=""
 
 let resultEl=document.getElementById("result-btn")
+let streakEl = document.getElementById("streak")
 function check(selected_index,effective)
 {
     console.log(type[selected_index])
@@ -25,17 +26,49 @@ function check(selected_index,effective)
     console.log(type_effec_1)
     let type_effec_2=effectiveness[selected_index][y]
     console.log(type_effec_2)
-    let final_effec=type_effec_1*type_effec_2*1.0
-    if(final_effec===effective)
+    let final_effec
+    if(x===y)
     {
-        resultEl.textContent="Correct Guess"
+        final_effec=type_effec_1*1.0
+        if (final_effec === effective)
+        {
+            resultEl.textContent = "Correct Guess"
+            streakEl.textContent++
+            if(streakEl.textContent==18)
+            {
+                streakEl.textContent="All Types Guessed Correctly"
+                setTimeout(reset,2000)
+            }
+        }
+        else
+        {
+            resultEl.textContent = "Wrong Guess"
+            streakEl.textContent=0
+        }
     }
     else
     {
-        resultEl.textContent="Wrong Guess"
-    }
 
-    console.log((final_effec))
+
+        final_effec= type_effec_1 * type_effec_2 * 1.0
+        if (final_effec === effective)
+        {
+            resultEl.textContent = "Correct Guess"
+            streakEl.textContent++
+            if(streakEl.textContent==18)
+            {
+                streakEl.textContent="All Types Guessed Correctly"
+                setTimeout(reset,2000)
+            }
+        }
+        else
+        {
+            resultEl.textContent = "Wrong Guess"
+            streakEl.textContent=0
+        }
+
+        console.log((final_effec))
+    }
 }
 function reset()
 {
@@ -44,6 +77,7 @@ function reset()
     selection=""
     typeEl.textContent=" - "
     resultEl.textContent=" - "
+    streakEl.textContent=0
 }
 function btn1(selected_effectiveness)
 {
