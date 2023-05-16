@@ -61,9 +61,9 @@ body
     font-weight: bold;
     background: lightslategray;
     max-width: 12.5%;
-    margin-top: 20px;
+    margin-top: 25px;
     position: absolute;
-    left: 0;
+    left: 2.5%;
     border: 2px solid black;
     border-radius: 10px;
 
@@ -73,9 +73,9 @@ body
     font-weight: bold;
     background: lightpink ;
     max-width: 12.5%;
-    margin-top: 20px;
+    margin-top: 25px;
     position: absolute;
-    left: 17.5%;
+    left: 19%;
     border: 2px solid black;
     border-radius: 10px;
 
@@ -85,9 +85,9 @@ body
     font-weight: bold;
     background: lightsalmon;
     max-width: 12.5%;
-    margin-top: 20px;
+    margin-top: 25px;
     position: absolute;
-    left: 35%;
+    left: 35.5%;
     border: 2px solid black;
     border-radius: 10px;
 
@@ -97,9 +97,9 @@ body
     font-weight: bold;
     background: lightcoral;
     max-width: 12.5%;
-    margin-top: 20px;
+    margin-top: 25px;
     position: absolute;
-    left: 52.5%;
+    left: 52%;
     border: 2px solid black;
     border-radius: 10px;
 
@@ -109,9 +109,9 @@ body
     font-weight: bold;
     background: lightskyblue;
     max-width: 12.5%;
-    margin-top: 20px;
+    margin-top: 25px;
     position: absolute;
-    left: 70%;
+    left: 68.5%;
     border: 2px solid black;
     border-radius: 10px;
 
@@ -122,9 +122,9 @@ body
     font-weight: bold;
     background: lightgreen;
     max-width: 12.5%;
-    margin-top: 20px;
+    margin-top: 25px;
     position: absolute;
-    right: 0;
+    right: 2.5%;
     border: 2px solid black;
     border-radius: 10px;
 
@@ -132,24 +132,24 @@ body
 h1
 {
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 10px;
     color: black;
 }
 
 h2
 {
-    font-size: 20px;
+    font-size: 25px;
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     color: black;
 }
 
 button
 {
     border: 1px solid black;
-    padding-top: 7px;
-    padding-bottom: 7px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     color: black;
     font-weight: bold;
     width: 150px;

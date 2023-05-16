@@ -39,7 +39,7 @@ function check(selected_index,effective)
             streakEl.textContent++
             if(streakEl.textContent==18)
             {
-                
+
                 streakEl.textContent="All Types Guessed Correctly"
                 setTimeout(allTypesComplete,2000)
                 randomise()
@@ -66,7 +66,7 @@ function check(selected_index,effective)
 
                 streakEl.textContent="All Types Guessed Correctly"
                 setTimeout(allTypesComplete,2000)
-                randomise()
+
 
             }
         }
@@ -85,7 +85,7 @@ function allTypesComplete()
     reset()
     randomise()
     streakCount++
-    streakCountEl="Streak"+streakCount
+    streakCountEl.textContent="Streak - "+streakCount
 
 }
 function reset()
@@ -96,6 +96,7 @@ function reset()
     typeEl.textContent=" - "
     resultEl.textContent=" - "
     streakEl.textContent=0
+    streakCountEl.textContent="Streak - "
 }
 function btn1(selected_effectiveness)
 {
