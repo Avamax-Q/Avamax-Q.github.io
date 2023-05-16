@@ -1,0 +1,172 @@
+body
+{
+
+    background-size: cover;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    height: 100vh;
+}
+
+.container
+{
+    background: darkcyan;
+    max-width: 40%;
+    ma-xheight: 30%;
+    margin: auto;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+.top
+{
+    position: relative;
+}
+.relative
+{
+
+    position: relative;
+
+}
+
+.result-div
+{
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    background: darkmagenta;
+    min-width: 25%;
+    min-height: 15%;
+    margin-left: 25px;
+    margin-top: -100;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.other-div
+{
+    position: absolute;
+    right: 0;
+    background: darkgrey;
+    min-width: 25%;
+    min-height: 15%;
+    margin-right: 25px;
+    margin-top: -100;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.x0
+{
+    background: lightcoral;
+    max-width: 12.5%;
+    margin-top: 20px;
+    position: absolute;
+    left: 0;
+    border: 2px solid black;
+    border-radius: 10px;
+
+}
+.x025
+{
+    background: lightslategray;
+    max-width: 12.5%;
+    margin-top: 20px;
+    position: absolute;
+    left: 17.5%;
+    border: 2px solid black;
+    border-radius: 10px;
+
+}
+.x05
+{
+    background: lightgreen;
+    max-width: 12.5%;
+    margin-top: 20px;
+    position: absolute;
+    left: 35%;
+    border: 2px solid black;
+    border-radius: 10px;
+
+}
+.x1
+{
+    background: lightskyblue;
+    max-width: 12.5%;
+    margin-top: 20px;
+    position: absolute;
+    left: 52.5%;
+    border: 2px solid black;
+    border-radius: 10px;
+
+}
+.x2
+{
+    background: lightcoral;
+    max-width: 12.5%;
+    margin-top: 20px;
+    position: absolute;
+    left: 70%;
+    border: 2px solid black;
+    border-radius: 10px;
+
+}
+
+.x4
+{
+    background: lightgoldenrodyellow;
+    max-width: 12.5%;
+    margin-top: 20px;
+    position: absolute;
+    right: 0;
+    border: 2px solid black;
+    border-radius: 10px;
+
+}
+h1
+{
+    margin-top: 10px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+h2
+{
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: black;
+}
+
+button
+{
+    border: 1px solid black;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: black;
+    font-weight: bold;
+    width: 150px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+#randomise-btn
+{
+    background: darkseagreen;
+}
+
+#reset-btn
+{
+    margin-left: 10px;
+    background: darkslateblue;
+}
+
+#result-btn
+{
+    margin-left: 10px;
+
+}
+
+#save-el
+{
+    font-weight: bold;
+}
