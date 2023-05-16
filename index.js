@@ -17,8 +17,11 @@ function randomise()
 }
 let selection=""
 
+let streakCount=0
+let streakCountEl=document.getElementById("streak_count")
+
 let resultEl=document.getElementById("result-btn")
-let streakEl = document.getElementById("streak")
+let streakEl = document.getElementById("streakEl")
 function check(selected_index,effective)
 {
     console.log(type[selected_index])
@@ -36,8 +39,11 @@ function check(selected_index,effective)
             streakEl.textContent++
             if(streakEl.textContent==18)
             {
+                
                 streakEl.textContent="All Types Guessed Correctly"
-                setTimeout(reset,2000)
+                setTimeout(allTypesComplete,2000)
+                randomise()
+
             }
         }
         else
@@ -57,8 +63,11 @@ function check(selected_index,effective)
             streakEl.textContent++
             if(streakEl.textContent==18)
             {
+
                 streakEl.textContent="All Types Guessed Correctly"
-                setTimeout(reset,2000)
+                setTimeout(allTypesComplete,2000)
+                randomise()
+
             }
         }
         else
@@ -69,6 +78,15 @@ function check(selected_index,effective)
 
         console.log((final_effec))
     }
+}
+
+function allTypesComplete()
+{
+    reset()
+    randomise()
+    streakCount++
+    streakCountEl="Streak"+streakCount
+
 }
 function reset()
 {

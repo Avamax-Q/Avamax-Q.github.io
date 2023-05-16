@@ -1,7 +1,7 @@
 body
 {
 
-    background-size: cover;
+    background-size:"" cover;
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
     height: 100vh;
@@ -42,21 +42,23 @@ body
     border-radius: 10px;
 }
 
-.streak
+.streaks
 {
     position: absolute;
     right: 0;
+    font-weight: bold;
     background: darkgrey;
     min-width: 25%;
     min-height: 15%;
     margin-right: 25px;
-    margin-top: -100;
+    margin-top: -125;
     border: 3px solid black;
     border-radius: 10px;
 }
 
 .x0
 {
+    font-weight: bold;
     background: lightslategray;
     max-width: 12.5%;
     margin-top: 20px;
@@ -68,6 +70,7 @@ body
 }
 .x025
 {
+    font-weight: bold;
     background: lightpink ;
     max-width: 12.5%;
     margin-top: 20px;
@@ -79,6 +82,7 @@ body
 }
 .x05
 {
+    font-weight: bold;
     background: lightsalmon;
     max-width: 12.5%;
     margin-top: 20px;
@@ -90,6 +94,7 @@ body
 }
 .x1
 {
+    font-weight: bold;
     background: lightcoral;
     max-width: 12.5%;
     margin-top: 20px;
@@ -101,6 +106,7 @@ body
 }
 .x2
 {
+    font-weight: bold;
     background: lightskyblue;
     max-width: 12.5%;
     margin-top: 20px;
@@ -113,6 +119,7 @@ body
 
 .x4
 {
+    font-weight: bold;
     background: lightgreen;
     max-width: 12.5%;
     margin-top: 20px;
@@ -161,15 +168,3 @@ button
     background: darkslateblue;
 }
 
-#result-btn
-{
-    font-size: 16;
-    background: whitesmoke;
-    margin-left: 10px;
-
-}
-
-#save-el
-{
-    font-weight: bold;
-}
